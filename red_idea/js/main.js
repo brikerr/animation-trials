@@ -1,22 +1,15 @@
 const backgroundCircle = new mojs.Shape({
-  // left: 0, top: 0,
-  // count: 20,
-  // stroke: { '#fff' : '#fff' },
-  // strokeWidth: { 20 : 0 },
-  fill: { '#842222' : '#842222' },
-  scale: { 0: 1, easing: 'elastic.out' },
+  fill: { '#581616' : '#581616'},
+  scale: { 0: 1, easing: 'sin.in' },
   radius: { 0: 400 },
   duration: 1200,
   opacity:  { 1: 0}
 });
 
-
-
 const circleBurst = new mojs.Burst({
-  // left: 0, top: 0,
   x: 0,
   radius: { 0: 110 },
-  count: 9,
+  count: 11,
   children: {
     shape: 'circle',
     radius: 20,
@@ -26,10 +19,7 @@ const circleBurst = new mojs.Burst({
   }
 });
 
-
 const centerCircle = new mojs.Shape({
-  // left: 0, top: 0,
-  // count: 20,
   stroke: { '#fff' : '#fff' },
   strokeWidth: { 10 : 0 },
   fill: { '#fff' : 'none' },
@@ -39,11 +29,7 @@ const centerCircle = new mojs.Shape({
   opacity:  { 1: 1 }
 });
 
-
-
-
 const bigCircle = new mojs.Shape({
-  // left: 0, top: 0,
   count: 10,
   stroke: { '#fff' : '#fff' },
   strokeWidth: { 5 : 0 },
